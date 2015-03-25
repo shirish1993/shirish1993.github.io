@@ -1,0 +1,20 @@
+@font-face{font-family: digital;src: url(digital-7.ttf);}
+
+#logo{position: absolute;top:70px;left:450px;font-size:50px;font-family:"Lucida Sans";color:rgb(45,85,181);border-radius:5px;padding: 5px;width: 140px;font-weight:bolder;}
+body{background:rgba(105,145,241,0.2);}
+#main_div{height:500px;width:500px;border-radius:10px;background:rgb(105,145,241);padding:0px;position:absolute;left:450px;top:250px;}
+.number{background:rgb(45,85,181);width:125px;height:125px;border-radius:5px;text-align:center;color:white;font-size:50px;font-weight:bold;}
+.number:hover{cursor: pointer;}
+#shuffle{border:none;border-radius: 5px;color:white;background:rgb(45,85,181);font-size:24px;padding:10px;width:150px;position: absolute;top:150px;left:800px;}
+#shuffle:hover{cursor:pointer;}
+#shuffle:focus{outline: none;}
+#alert{position:absolute;top:250px;left:450px;background:rgba(105,145,241,0.8);height:550px;width:500px;display: none;color:white;border-radius:10px;}
+#message{font-size:40px;position: absolute;top:150px;left:30px;}
+#insane{border:none;border-radius: 5px;color:white;background:rgb(45,85,181);font-size:24px;padding:10px;}
+#insane:hover{cursor:pointer;}
+#insane:focus{outline: none;}
+#solve{border:none;border-radius: 5px;color:white;background:rgb(45,85,181);font-size:24px;padding:10px;width: 150px;position:absolute;left:450px;top:150px;}
+#solve:hover{cursor:pointer;}
+#solve:focus{outline: none;}
+#timer{font-family:digital;font-size:30px;width:130px;background:rgb(45,85,181);color:white;padding:10px;border-radius: 5px;text-align:right;left:800px;position: absolute;top:70px;}
+#help{font-size:24px;color: rgb(45,85,181);position: absolute;top:850px;left: 450px;}

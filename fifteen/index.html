@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>fifteen | Puzzle</title>
+		<script src="jquery-1.11.1.min.js"></script>
+		<script src="jquery.mobile-1.4.2.min.js"></script>
+		<script src="script.js"></script>
+		
+		<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body onkeydown="key_up(event)">
+		<div id="logo">fifteen</div>
+		<table id="timer"><tr><td><img src="clock.png" align="left"> </td><td> <span id="time_elapsed">00:00:00</span></td></tr></table>
+		<div align="center"><table id="main_div" cellspacing="10">
+			<tr>
+				<td class="number" onclick="move_block(this.id)" id="00">1</td>
+				<td class="number" onclick="move_block(this.id)" id="01">2</td>
+				<td class="number" onclick="move_block(this.id)" id="02">3</td>
+				<td class="number" id="03" onclick="move_block(this.id)">4</td>
+			</tr>
+			<tr>
+				<td onclick="move_block(this.id)" class="number" id="10">5</td>
+				<td onclick="move_block(this.id)" class="number" id="11">6</td>
+				<td onclick="move_block(this.id)" class="number" id="12">7</td>
+				<td onclick="move_block(this.id)" class="number" id="13">8</td>
+			</tr><tr>
+				<td onclick="move_block(this.id)" class="number" id="20">9</td>
+				<td onclick="move_block(this.id)" class="number" id="21">10</td>
+				<td onclick="move_block(this.id)" class="number" id="22">11</td>
+				<td onclick="move_block(this.id)" class="number" id="23">12</td>
+			</tr><tr>
+				<td onclick="move_block(this.id)" class="number" id="30">13</td>
+				<td onclick="move_block(this.id)" class="number" id="31">14</td>
+				<td onclick="move_block(this.id)" class="number" id="32">15</td>
+				<td onclick="move_block(this.id)" class="number" id="33"> </td>
+			</tr>
+		</table>
+		</div>
+			<div id="shuffle" onclick="shuffle()">Shuffle</div>
+			
+			<div id="solve" onclick="solve()">Solve</div>
+			<div id="moves"> Moves: 0</div>
+		<div id="alert">
+			<span id="message">Hurray!!!<br />
+				<small>You have successfully completed<br />
+					one of the greatest Maths puzzle
+				</small><br />
+				<small style="color:rgb(45,85,181);">
+					<b>Now try </b><div id="insane" onclick="insane_level()">Level: Insane</div>
+				</small>
+			</span>
+		</div>
+		<div id="help">Use <b>arrow keys</b> or <b>mouse</b> to solve the puzzle by<br />moving neighbouring blocks to the empty place.</div>
+	</body>
+</html>
+
